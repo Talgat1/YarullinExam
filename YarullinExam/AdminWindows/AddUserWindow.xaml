@@ -1,0 +1,23 @@
+﻿<Window x:Class="YarullinExam.AdminWindows.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YarullinExam.AdminWindows"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="AddUserWindow" Height="450" Width="800">
+    <Grid>
+        <Border x:Name="BoderWindow">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" FontSize="14" >Введите данные пользователя</TextBlock>
+                <TextBlock Text="ФИО пользователя" Height="20" Width="230" HorizontalAlignment="Center" Margin="0,40,0,0"/>
+                <TextBox x:Name="FIOTB" Height="28" Width="230" HorizontalAlignment="Center" Padding="5,5,0,0" />
+                <TextBlock Text="Логин" Height="20" Width="230" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                <TextBox x:Name="LoginTB" Height="28" Width="230" HorizontalAlignment="Center" Padding="5,5,0,0" />
+                <TextBlock Text="Пароль" Height="20" Width="230" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                <PasswordBox x:Name="PasswordTB" Height="28" Width="230" HorizontalAlignment="Center" Padding="5,5,0,0" />
+                <Button x:Name="RegisBtn" Content="Зарегистрировать" Height="28" Width="230" HorizontalAlignment="Center" Background="Violet" Margin="0,10,0,0" Click="RegisBtn_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
